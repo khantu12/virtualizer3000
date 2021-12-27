@@ -19,9 +19,9 @@ RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash
 
 RUN apt-get upgrade -y && apt-get install -y nodejs
 
-RUN apt-get install -y build-essential
+RUN apt install -y build-essential libxtst-dev libpng-dev python python3-pip && npm i -g node-gyp
 
-RUN npm install
+RUN npm i -g yarn && yarn
 
 COPY . .
 
