@@ -26,7 +26,8 @@
     "puppeteer-core": "^13.0.1",
     "puppeteer-extra": "^3.2.3",
     "puppeteer-extra-plugin-adblocker": "^2.12.0",
-    "robotjs": "^0.6.0"
+    "robotjs": "^0.6.0",
+    "ts-node": "^10.4.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.8.0",
