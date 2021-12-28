@@ -29,8 +29,10 @@ export default class PuppeteerManager {
     if (!this.browser) {
       this.browser = await puppeteer.launch({
         headless: false,
-        userDataDir: `${os.homedir()}/.config/google-chrome`,
+        // userDataDir: `${os.homedir()}/.config/google-chrome`,
         defaultViewport: null,
+        args: ['--no-sandbox',],
+        executablePath: process.env.PUPPETEER_EXEC_PATH
       });
     }
 
