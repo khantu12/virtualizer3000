@@ -1,6 +1,5 @@
 import puppeteer from 'puppeteer';
 // const puppeteer = require('puppeteer-extra');
-import os from 'os';
 import robotjs from 'robotjs';
 
 // const AdblockerPlugin = require('puppeteer-extra-plugin-adblocker')
@@ -29,10 +28,10 @@ export default class PuppeteerManager {
     if (!this.browser) {
       this.browser = await puppeteer.launch({
         headless: false,
-        // userDataDir: `${os.homedir()}/.config/google-chrome`,
+        executablePath: process.env.PUPPETEER_EXEC_PATH || null,
+        userDataDir: `./google-chrome`,
         defaultViewport: null,
-        args: ['--no-sandbox',],
-        executablePath: process.env.PUPPETEER_EXEC_PATH
+        args: ['--no-sandbox'],
       });
     }
 
