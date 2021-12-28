@@ -160,6 +160,19 @@ export default class PuppeteerManager {
     this.youtube = null;
   }
 
-  // TODO Implement 'goback'
-  // TODO Implement 'goforward'
+  goBack = async () => {
+    if (!this.youtube) {
+      return;
+    }
+
+    await this.youtube.keyboard.press('ArrowLeft');
+  }
+
+  goForward = async () => {
+    if (!this.youtube) {
+      return;
+    }
+
+    await this.youtube.keyboard.press('ArrowRight');
+  }
 }

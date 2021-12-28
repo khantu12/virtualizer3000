@@ -43,11 +43,15 @@ export default class DiscordBotManager {
         '=stop': this.onStop,
         '=s': this.onStop,
 
+        '=back': this.onBack,
+        '=b': this.onBack,
         '=goback': this.onBack,
         '=gb': this.onBack,
         '=skipback': this.onBack,
         '=sb': this.onBack,
 
+        '=forward': this.onForward,
+        '=f': this.onForward,
         '=goforward': this.onForward,
         '=gf': this.onForward,
         '=skipfroward': this.onForward,
