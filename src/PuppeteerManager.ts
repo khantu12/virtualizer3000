@@ -30,8 +30,11 @@ export default class PuppeteerManager {
         headless: false,
         executablePath: process.env.PUPPETEER_EXEC_PATH || null,
         userDataDir: `./google-chrome`,
-        defaultViewport: null,
-        args: ['--no-sandbox'],
+        defaultViewport: {
+          width: 1920,
+          height: 1080
+        },
+        args: ['--no-sandbox', '--windows-size=1920,1080'],
       });
     }
 

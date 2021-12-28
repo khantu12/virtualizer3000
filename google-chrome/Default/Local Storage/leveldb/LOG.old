@@ -1,5 +1,3 @@
-2021/12/28-02:26:38.925 3 Reusing MANIFEST /home/khantu/projects/virtualizer3000/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
-2021/12/28-02:26:38.929 3 Recovering log #19
-2021/12/28-02:26:38.930 3 Reusing old log /home/khantu/projects/virtualizer3000/google-chrome/Default/Local Storage/leveldb/000019.log 
-2021/12/28-02:27:02.415 5 Level-0 table #24: started
-2021/12/28-02:27:02.423 5 Level-0 table #24: 128828 bytes OK
+2021/12/28-02:46:15.501 3b59 Reusing MANIFEST /home/khantu/projects/virtualizer3000/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2021/12/28-02:46:15.502 3b59 Recovering log #26
+2021/12/28-02:46:15.503 3b59 Reusing old log /home/khantu/projects/virtualizer3000/google-chrome/Default/Local Storage/leveldb/000026.log 
